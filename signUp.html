@@ -1,93 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="signUp.css">
-    <head>
-        <!--title-->
-        <title>Sign Up</title>
-        <meta charset="utf-8">
-    </head>
-    <body>
-        <header>
+  <link rel="stylesheet" href="signUp.css">
+
+  <head>
+    <!--title-->
+    <title>Sign Up</title>
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+
+    <header>
         <h1>Create New Account</h1>
-        </header>
+    </header>
 
-        <!--Form-->
-        <section class="">
-            <div class="">
-              <div class="">
-                <div class="">
-                  <header class="">
-                    <h1 class="">Create New Account</h1>
-                  </header>
+      <!-- Form -->
+    <div class="">
+      <form class="signUp" name="signUp" action="signUp.php" method="post">
+        <div class="">
+          <div class="">
+            <input class="" type="text" name="firstName" placeholder="First name">
+          </div>
     
-                  <!-- Form -->
-                  <form class="">
-                    <div class="">
-                      <div class="">
-                        <input class="" type="text" placeholder="First name">
-                      </div>
-    
-                      <div class="">
-                        <input class="" type="text" placeholder="Last name">
-                      </div>
-                    </div>
+          <div class="">
+              <input class="" type="text" name="lastName" placeholder="Last name">
+            </div>
+        </div>
 
-                    <div class="">
-                      <select class="" style="width: 100%;"
-                              data-placeholder="Gender">
-                        <option></option>
-                        <option value="First Option">Male</option>
-                        <option value="Second Option">Female</option>
-                        <option value="Third Option">Other</option>
-                      </select>
-                    </div>
+        <div class="">
+          <select class="" style="width: 100%;"
+            data-placeholder="Gender">
+            <option></option>
+            <option value="Option 1">Male</option>
+            <option value="Option 2">Female</option>
+            <option value="Option 3">Other</option>
+          </select>
+        </div>
     
-                    <div class="">
-                      <div class="">
-                        <select class="" style="width: 100%;"
-                                data-placeholder="Month">
-                          <option></option>
-                          <option value="First Option">January</option>
-                          <option value="Second Option">February</option>
-                          <option value="Third Option">March</option>
-                          <option value="Fourth Option">April</option>
-                          <option value="Fifth Option">May</option>
-                          <option value="Sixth Option">June</option>
-                          <option value="Seventh Option">July</option>
-                          <option value="Eighth Option">August</option>
-                          <option value="Ninth Option">September</option>
-                          <option value="Tenth Option">October</option>
-                          <option value="Eleventh Option">November</option>
-                          <option value="Twelfth Option">December</option>
-                        </select>
-                      </div>
+        <div class="">
+          <div class="">
+            <select class="" style="width: 100%;"
+              data-placeholder="Month">
+              <option></option>
+              <option value="Option 1">January</option>
+              <option value="Option 2">February</option>
+              <option value="Option 3">March</option>
+              <option value="Option 4">April</option>
+              <option value="Option 5">May</option>
+              <option value="Option 6">June</option>
+              <option value="Option 7">July</option>
+              <option value="Option 8">August</option>
+              <option value="Option 9">September</option>
+              <option value="Option 10">October</option>
+              <option value="Option 11">November</option>
+              <option value="Option 12">December</option>
+            </select>
+          </div>
     
-                      <div class="">
-                        <input class="" type="text" placeholder="Day">
-                      </div>
+          <div class="">
+            <input class="" type="text" placeholder="Day">
+          </div>
     
-                      <div class="">
-                        <input class="" type="text" placeholder="Year">
-                      </div>
-                    </div>
+          <div class="">
+            <input class="" type="text" placeholder="Year">
+          </div>
+        </div>
+
+        <div class="">
+          <input class="" type="text" placeholder="Email address">
+        </div>
     
-                    <div class="">
-                      <input class="" type="text" placeholder="Username">
-                    </div>
+        <div class="">
+          <input class="" type="text" placeholder="Password">
+        </div>
     
-                    <div class="">
-                      <input class="" type="text" placeholder="Email address">
-                    </div>
+        <div class="">
+          <input class="" type="text" placeholder="Confirm password">
+        </div>
     
-                    <div class="">
-                      <input class="" type="text" placeholder="Password">
-                    </div>
-    
-                    <div class="">
-                      <input class="" type="text" placeholder="Confirm password">
-                    </div>
-    
-                    <button class="" type="button">Signup</button>
-                  </form>
-    </body>
+        <button class="" type="submit" >Continue</button>
+        </form>
+    </div>
+  </body>
 </html>
