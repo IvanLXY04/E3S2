@@ -4,13 +4,18 @@ if(isset($_POST['email'])){
     $firstName=$_POST["firstName"];
     $lastName=$_POST["lastName"];
     $gender=$_POST["gender"];
-    $day=$_POST["day"];
-    $month=$_POST["month"];
-    $year=$_POST["year"];
+    $dob=$_POST["dob"];
     $email=$_POST["email"];
-    $password=$_POST["password"]
+    $password=$_POST["password"];
+    $phone=$_POST["phone"];
+    $postcode=$_POST["postcode"];
+    $city=$_POST["city"];
+    $highestEducation=$_POST["highestEducation"];
+    $profilePic=$_FILES["profilePic"]["name"];
 
-    $sql="insert into user values('$email','$password','$firstName','$lastName','$gender','$day','$month','$year')";
+
+    $sql="insert into user(userId,password,firstName,lastName,gender,dob,city,postcode,highestEducation,PhoneNum,profilePic) 
+    values('$email','$password','$firstName','$lastName','$gender','$dob','$city','$postcode','$highestEducation','$prodilePic')";
     $result=mysqli_query($session,$sql);
     if($result)
         echo"<script>alert('Succesfully SignUp')</script>";
