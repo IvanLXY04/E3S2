@@ -15,7 +15,7 @@ if(isset($_POST['email'])){
 
 
     $sql="insert into user(userId,password,firstName,lastName,gender,dob,city,postcode,highestEducation,PhoneNum,profilePic) 
-    values('$email','$password','$firstName','$lastName','$gender','$dob','$city','$postcode','$highestEducation','$prodilePic')";
+    values('$email','$password','$firstName','$lastName','$gender','$dob','$city','$postcode','$highestEducation','$profilePic')";
     $result=mysqli_query($session,$sql);
     if($result)
         echo"<script>alert('Succesfully SignUp')</script>";

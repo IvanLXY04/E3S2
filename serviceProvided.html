@@ -5,33 +5,40 @@
     </head>
 
     <body>
-        <div>
+        <form class="service" name="service" action="serviceProvided.php" method="post">
             <div>
-                <input class="" name="category" type="text" placeholder="Category">
+                <div>
+                    <input class="" name="category" type="text" placeholder="Category">
+                </div>
+
+                <div>
+                    <input class="" name="subcategory" type="text" placeholder="Sub-category">
+                </div>
             </div>
 
             <div>
-                <input class="" name="subcategory" type="text" placeholder="Sub-category">
+                <input class="" name="serviceType" type="text" placeholder="Service Type">
             </div>
-        </div>
 
-        <div>
-            <input class="" name="price" type="text" placeholder="price">
-        </div>
+            <div>
+                <input class="" name="price" type="text" placeholder="price">
+            </div>
 
-        <div>
-            <input class="" name="datePublished" type="date" placeholder="datePublished">
-        </div>
-        <div>
-            <input class="" name="status" type="text" placeholder="status">
-        </div>
+            <div>
+                <input class="" name="datePublished" type="date" placeholder="datePublished">
+            </div>
+            <div>
+                <input class="" name="status" type="text" placeholder="status">
+            </div>
 
-        <div class="scroll">
-            <input class="" name="otherDetails" type="text" placeholder="Description">
-        </div>
+            <div class="scroll">
+                <input class="" name="otherDetails" type="text" placeholder="Description">
+            </div>
 
-        <div>
-            <input class="" name="portfolio" type="file" accept="image/png , image/jpeg">
-        </div>
+            <div>
+                <input class="" name="portfolio" type="file" accept="image/png , image/jpeg">
+            </div>
+            <button class="" type="submit" >Submit</button>
+        </form>
     </body>
 </html>

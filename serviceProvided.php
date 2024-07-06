@@ -6,14 +6,15 @@ $serviceId=$serviceId+1;
 if(isset($_SESSION['serviceId'])){
     $category=$_POST["category"];
     $subCategory=$_POST["subcategory"];
+    $serviceType=$_POST["serviceType"];
     $price=$_POST["price"];
     $datePublished=$_POST["datePublished"];
     $status=$_POST["status"];
     $otherDetails=$_POST["otherDetails"];
     $portfolio=$_FILES["portfolio"]["name"];
 
-    $sql="insert into service(category,subCategory,price,datePublished,status,otherDetails,portfolio) 
-    values('$serviceId','$category','$subCategory','$price','$datePublished','$status','$otherDetails','$portfolio','$userId')";
+    $sql="insert into service(category,subCategory,serviceType,price,datePublished,status,otherDetails,portfolio) 
+    values('$serviceId','$category','$subCategory','$serviceType','$price','$datePublished','$status','$otherDetails','$portfolio','$userId')";
     $result=mysqli_query($session,$sql);
     if($result)
         echo"<script>alert('Succesfully')</script>";
