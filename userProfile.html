@@ -1,107 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>IKUN</title> 
-<link rel="stylesheet" href="navigationIKUN.css"> 
-<style>
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 40%;
-  border-radius: 5px;
-}
-
-
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.579);
-}
-
-img {
-  border-radius: 5px 5px 0 0;
-}
-
-#picture1 {
-    margin-left: 15%;
-}
-
-.container {
-  padding: 2px 16px;
-}
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - IKUN</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar-brand {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #6f42c1 !important;
+            display: flex;
+            align-items: center;
+        }
+        .navbar-logo {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .profile-header {
+            background-color: #f8f9fa;
+            padding: 2rem 0;
+        }
+    </style>
 </head>
 <body>
-
-    <canvas id="myCanvas" width="250" height="120" style="border:1px solid #431515;">
-        Your browser does not support the HTML canvas tag.</canvas>
-    <script>
-    var c = document.getElementById("myCanvas");
-    var ctx = c.getContext("2d");
-
-    ctx.font = "100px Arial";
-    ctx.strokeText("IKUN", 10,85);
-
-    // Create gradient
-    const gradient = ctx.createLinearGradient(0, 0, c.width, 0);
-    gradient.addColorStop("0", "magenta");
-    gradient.addColorStop("0.5", "blue");
-    gradient.addColorStop("1.0", "red");
-
-    // Fill with gradient
-    ctx.strokeStyle = gradient;
-    ctx.strokeText("IKUN", 10, 80);
-
-
-    </script>
-
-    <nav class="navbar">
-        <ul>
-
-
-            <li><a href="navigationIKUN.html">Home</a></li>  
-            <li><a href="login.html">Login</a></li>
-            <li><a href="signup.html">Sign Up</a></li>
-            <li><a href="userProfile.html">User Profile</a></li>
-            <li><a href="settings.html">Settings</a></li>
-            <li><a href="mainpage.html">Logout</a></li>
-
-
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="image/IKUN logo.png" alt="IKUN Logo" class="navbar-logo">
+                IKUN
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sign Up</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">User Profile</a></li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Settings</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Logout</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-<center><h2>User Profile</h2></center>
-
-<div class="flip-card" id="test1">
-    <div class=""flip-card-inner:></div>
-        <img src="image/Peter.jpg" alt="Avatar" style="width:70%" id="picture1">
+    <div class="profile-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <img src="https://via.placeholder.com/150" alt="Profile Picture" class="img-fluid rounded-circle">
+                </div>
+                <div class="col-md-8">
+                    <h1 class="display-4">Peter</h1>
+                    <p class="lead">Bachelor of Data Engineering</p>
+                </div>
+            </div>
+        </div>
     </div>
-  <div class="container">
-    <center><h3><b>Peter</b></h3> </center>
-    <center><i><b></b><p>Bachelor of Data Engineering</p></b></i></center>
-    <ul>
-        <li> Skills
-            <ul>
-         <li> Python 
-         <li> HTML
-         </ul>
-        <li> Projects
-         <ul>
-         <li> Library management system
-         <li> Stock management system
-         </ul>
-        <li> Contact
-            <ul>
-                <li>Phone No: 011-81782637
-                <li>Email: peter1999@gmail.com
-            </ul>
-        </li>
-  </div>
-</div>
 
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-8">
+                <h2>About Me</h2>
+                <p>Peter is a data engineer with a passion for developing innovative programs. He's experienced in Python and HTML and has worked on various projects, including a library management system and a stock management system.</p>
+                
+                <h2 class="mt-4">Skills</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">Python</li>
+                    <li class="list-group-item">HTML</li>
+                    <li class="list-group-item">Data Engineering</li>
+                </ul>
+                
+                <h2 class="mt-4">Projects</h2>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Library Management System</h5>
+                        <p class="card-text">A system to manage library resources and user borrowing.</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Stock Management System</h5>
+                        <p class="card-text">An application to track and manage inventory for businesses.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h2>Interests</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">Reading tech blogs</li>
+                    <li class="list-group-item">Exploring new programming languages</li>
+                </ul>
+                
+                <h2 class="mt-4">Contact</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">Email: peter@example.com</li>
+                    <li class="list-group-item">LinkedIn: linkedin.com/in/peter</li>
+                    <li class="list-group-item">GitHub: github.com/peter</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html> 
+</html>
 
