@@ -1,0 +1,29 @@
+#divcontent{
+    position: relative;
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+
+#dynamicBackground{
+    position:fixed;
+    right: 0%;
+    bottom: 0%;
+    min-width: 100%;
+    min-height: 100%;
+}
+p{
+
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
+#login{
+    
+
+}
+
+#signup{
+
+}
+
