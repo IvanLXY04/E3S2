@@ -16,7 +16,7 @@
 
       <!-- Form -->
     <div class="">
-      <form class="signUp" name="signUp" action="signUp.php" method="post">
+      <form class="signUp" name="signUp" action="signUp.php" onsubmit="return checkPass()" method="post">
         <div class="">
           <div class="">
             <input class="" type="text" name="firstName" placeholder="First name">
@@ -28,7 +28,7 @@
         </div>
 
         <div class="">
-          <select class="" style="width: 100%;"
+          <select class="" name="gender" style="width: 100%;"
             data-placeholder="Gender">
             <option></option>
             <option value="Option 1">Male</option>
@@ -39,7 +39,7 @@
     
         <div class="">
           <div class="">
-            <select class="" style="width: 100%;"
+            <select class="" name="month" style="width: 100%;"
               data-placeholder="Month">
               <option></option>
               <option value="Option 1">January</option>
@@ -58,28 +58,40 @@
           </div>
     
           <div class="">
-            <input class="" type="text" placeholder="Day">
+            <input class="" name="day" type="text" placeholder="Day">
           </div>
     
           <div class="">
-            <input class="" type="text" placeholder="Year">
+            <input class="" name="year" type="text" placeholder="Year">
           </div>
         </div>
 
         <div class="">
-          <input class="" type="text" placeholder="Email address">
+          <input class="" type="text" name="email" placeholder="Email address">
         </div>
     
         <div class="">
-          <input class="" type="text" placeholder="Password">
+          <input class="" type="text" name="password" placeholder="Password">
         </div>
     
         <div class="">
-          <input class="" type="text" placeholder="Confirm password">
+          <input class="" type="text" name="confirmPass" placeholder="Confirm password">
         </div>
     
         <button class="" type="submit" >Continue</button>
         </form>
     </div>
+
+    <script>
+      function checkPass(){
+          var x=document.forms["signUp"]["confirmPass"].value;
+          var y=document.forms["signUp"]["password"].value;
+          if (x!=y ||x==""){
+          alert("the confirm password must be same as password!");
+          return false;
+              }
+          }
+  </script>
+
   </body>
 </html>
