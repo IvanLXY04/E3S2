@@ -8,21 +8,46 @@
     <link rel="stylesheet" href="navigationIKUN.css"> 
 </head> 
 <body>
+    
+    <canvas id="myCanvas" width="250" height="120" style="border:1px solid #431515;">
+        Your browser does not support the HTML canvas tag.</canvas>
+    <script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
 
-    <h1> IKUN </h1>
+    ctx.font = "100px Arial";
+    ctx.strokeText("IKUN", 10,85);
+
+    // Create gradient
+    const gradient = ctx.createLinearGradient(0, 0, c.width, 0);
+    gradient.addColorStop("0", "magenta");
+    gradient.addColorStop("0.5", "blue");
+    gradient.addColorStop("1.0", "red");
+
+    // Fill with gradient
+    ctx.strokeStyle = gradient;
+    ctx.strokeText("IKUN", 10, 80);
+
+
+    </script>
+
     <nav class="navbar">
         <ul>
 
 
-            <li><a href="mainpage.html">Home</a></li>
+            <li><a href="navigationIKUN.html">Home</a></li>  
             <li><a href="login.html">Login</a></li>
             <li><a href="signup.html">Sign Up</a></li>
             <li><a href="userProfile.html">User Profile</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            <li><a href="mainpage.html">Logout</a></li>
+
+
         </ul>
     </nav>
 
 <main>
-    <h3> This is the Home page</h3>
+    <h3> Home page</h3>
     <p>blablabla</p>
 </main>
 
