@@ -21,6 +21,10 @@ h1{
     overflow: hidden;
 }
 
+.navbar li {
+    float: left;
+  }
+
 .navbar a{
     color: white;
     text-decoration: none;
@@ -31,6 +35,10 @@ h1{
 .navbar a:hover{
     background-color:hsl(0, 0%, 10%);
 }
-.navbar li{
-    float: left;
+.navbar .nav-right {
+    float: right;
+}
+  
+.navbar .nav-right a {
+    display: inline-block;
 }
